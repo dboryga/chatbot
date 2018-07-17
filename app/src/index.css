@@ -8,12 +8,19 @@
   vertical-align:baseline;
 }
 
-:root {
-  font-size: 12px;
+body{
+  font-family: Arial;
 }
 
-h1 {font-size: 3.5rem; text-align: center;}
-h2 {font-size: 2.5rem; text-align: center;}
-h3 {font-size: 1.5rem; text-align: center;}
 
+/* Root Settings */
 
+:root{
+  font-size: 12px; /* REM Size */
+
+  /* Variables */
+
+  --main-bg-color: #fff;
+  --main-item-color: #ff9117;
+  --main-text-color: #000;
+}

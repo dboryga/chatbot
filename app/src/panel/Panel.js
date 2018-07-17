@@ -1,12 +1,21 @@
 import React from 'react';
 
+//components
+import Navigation from './Navigation';
+import Content from './Content';
+
 //css
-import './Panel.css'
+import './Panel.css';
 
 const Panel = () => {
   return (
-    <div id="panel">
-      <h1>Panel</h1>
+    <div id="container">
+      <div id="panel">
+
+        <Navigation />
+        <Content />
+        
+      </div>
     </div>
   );
 }
