@@ -1,38 +1,21 @@
-import React from 'react';
+import React from "react";
+import ReactSVG from "react-svg";
 
-//img
-import Dashboard from './img/dashboard';
-import MyBots from './img/myBots';
-import Statistics from './img/statistics';
-import Help from './img/help';
+const NavItem = props => {
+  let namesMap = {
+    Dashboard: "img/icons/dashboard.svg",
+    "My Chatbots": "img/icons/folder.svg",
+    Statistics: "img/icons/statistics.svg",
+    Help: "img/icons/help.svg",
+    Logout: "img/icons/logout.svg"
+  };
 
-
-const NavItem = (props) => {
-  switch(props.text) {
-    case 'Dashboard':
-      return (
-        <div class="nav-item">
-            <Dashboard />
-            <p>{props.text}</p>
-        </div>
-      );
-    break;
-    case 'My Chatbots':
-    return (
-      <div class="nav-item">
-          <MyBots />
-          <p>{props.text}</p>
-      </div>
-    );
-  break;
-    default:
-      return (
-        <div class="nav-item">
-            <p>{props.text}</p>
-        </div>
-      );
-  }
-  
-}
+  return (
+    <div class="nav-item">
+      <ReactSVG path={namesMap[props.text]} />
+      <p>{props.text}</p>
+    </div>
+  );
+};
 
 export default NavItem;

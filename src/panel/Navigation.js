@@ -1,21 +1,13 @@
 import React from 'react';
-
+import ReactSVG from "react-svg";
 //components
 import NavItem from './NavItem';
-
-//img
-import Logo from './img/logo';
-import Dashboard from './img/dashboard';
-import MyBots from './img/myBots';
-import Statistics from './img/statistics';
-import Help from './img/help';
-
 
 const Navigation = () => {
   return (
     <nav>
         <div class="logo nav-item">
-            <Logo />
+        <ReactSVG path="img/icons/logo.svg" />
             <p>Chatbot</p>
         </div>
 
