@@ -1,10 +1,9 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import ReactSVG from "react-svg";
 
 //components
 import NavItem from './NavItem';
-import Topbar from './Topbar'
+import Topbar from './Topbar';
 
 //css
 import './Panel.css';
@@ -20,17 +19,18 @@ const Panel = () => {
             <p>Chatbot</p>
           </div>
           <div id="navOptions">
-            <NavItem text="Dashboard"/>
-            <NavItem text="My Chatbots"/>
-            <NavItem text="Statistics"/>
-            <NavItem text="Help"/>
-            <NavItem text="Logout"/>
+              <NavItem text="Dashboard"/>
+              <NavItem text="My Chatbots"/>
+              <NavItem text="Statistics"/>
+              <NavItem text="Help"/>
+              <NavItem text="Logout"/>
           </div>
         </nav>
 
         <article id="content">
         
           <Topbar />
+          
           
 
         </article>
