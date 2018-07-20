@@ -24,6 +24,7 @@
 /* NAVIGATION */
 nav{
     background-color: rgba(255, 255, 255, .5);
+    background: var(--main-bg-color-half-transparent);
     flex-grow: 1;
     flex-shrink: 12;
     margin-right: 1px;
@@ -89,13 +90,24 @@ nav{
 /* Hover effects for Navigation */
 .nav-item:hover{
     cursor: pointer;
-    background-color: rgba(255, 255, 255, .6);
+    background: var(--main-bg-color-semi-transparent);
+}
+
+/* Effects for Navigation when active*/
+.nav-item.active{
+    color: var(--main-item-color);
+    background: var(--main-bg-color-semi-transparent);
+    cursor: default;
+}
+.nav-item.active svg{
+    fill: currentColor;
+    color: var(--main-item-color);
 }
 
 
 /* CONTENT */
 #content{
-    background-color: rgba(255, 255, 255, .7);
+    background: var(--main-bg-color-semi-transparent);
     flex-grow: 10;
     flex-shrink: 1;
     border-top-right-radius: 3px;
@@ -123,14 +135,14 @@ header{
 }
 .topbarItem svg{
     fill: currentColor;
-    color: #a6a7a8;
+    color: #999;
     transition: all .3s;
 }
 
 .topbarItem img{
     height: 36px;
     width: 36px;
-    border: 1px solid #a6a7a8;
+    border: 1px solid #999;
     border-radius: 50%;
     opacity: .8;
     transition: all .3s;
@@ -143,10 +155,10 @@ header{
 /* Topbar Items hover effects */
 .topbarItem:hover svg{
     fill: currentColor;
-    color: #303336;
+    color: var(--main-text-color);
 }
 
 .topbarItem:hover img{
-    border-color: #303336;
+    border-color: var(--main-text-color);
     opacity: 1;
 }

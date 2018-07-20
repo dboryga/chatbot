@@ -8,19 +8,44 @@
   vertical-align:baseline;
 }
 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, main, nav, section{
+  display:block;
+}
+
+/* Global style settings */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 body{
   font-family: Arial;
+  color: var(--main-text-color);
 }
 
 
 /* Root Settings */
 
 :root{
-  font-size: 12px; /* REM Size */
+  font-size: 12px; /* rem font size */
 
   /* Variables */
 
-  --main-bg-color: #fff;
+  /* Light theme */
+  --main-bg-color: rgb(255, 255, 255);
+  --main-bg-color-transparent: rgba(255, 255, 255, .3);
+  --main-bg-color-half-transparent: rgba(255, 255, 255, .5);
+  --main-bg-color-semi-transparent: rgba(255, 255, 255, .7);
   --main-item-color: #ff9117;
-  --main-text-color: #000;
+  --main-text-color: #222;
+
+  /* Dark theme *
+  --main-bg-color: rgb(25, 27, 37);
+  --main-bg-color-transparent: rgba(25, 27, 37, .3);
+  --main-bg-color-half-transparent: rgba(25, 27, 37, .5);
+  --main-bg-color-semi-transparent: rgba(25, 27, 37, .7);
+  --main-item-color: #ff9117;
+  --main-text-color: #eee; */
+
 }
+

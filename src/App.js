@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  //Link
+  Switch,
+  Redirect
 } from 'react-router-dom';
 
 
@@ -10,15 +11,17 @@ import {
 import Landing from './landing/Landing';
 import Panel from './panel/Panel';
 
+
 class App extends Component {
   render() {
     return (
 
       <Router>
-        <div>
+        <Switch>
           <Route exact path="/" component={Landing} />
           <Route path="/panel" component={Panel} />
-        </div>
+          <Route render={() => ( <Redirect to="/"/> )}/> {/*ERROR */}
+        </Switch>
       </Router>
 
     );
