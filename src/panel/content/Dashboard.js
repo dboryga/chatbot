@@ -3,7 +3,13 @@ import React from 'react';
 const Dashboard = () => {
   return (
       <main>
-        <h1>Dashboard</h1>
+        <div id="dashboard">
+          <div className="box">
+            <div className="boxIcon">+</div>
+            <div className="description">Add new chatbot</div>
+          </div>
+
+        </div>
       </main>
   );
 }

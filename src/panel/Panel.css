@@ -25,9 +25,9 @@
 nav{
     background-color: rgba(255, 255, 255, .5);
     background: var(--main-bg-color-half-transparent);
-    flex-grow: 1;
-    flex-shrink: 12;
+    width: 13vw;
     margin-right: 1px;
+    min-width: 100px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
@@ -108,8 +108,7 @@ nav{
 /* CONTENT */
 #content{
     background: var(--main-bg-color-semi-transparent);
-    flex-grow: 10;
-    flex-shrink: 1;
+    width: 52vw;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
@@ -123,6 +122,10 @@ header{
     justify-content: flex-end;
 
     border-bottom: 1px solid #e7dcdb;
+}
+main {
+    height: 90%;
+    overflow-y: auto;
 }
 
 .topbarItem{
@@ -161,4 +164,38 @@ header{
 .topbarItem:hover img{
     border-color: var(--main-text-color);
     opacity: 1;
+}
+
+/* DASHBOARD */
+#dashboard{
+    display: flex;
+    flex-flow: row wrap;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: var(--main-bg-color);
+    height: 125px;
+    width: 125px;
+    margin: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #999;
+
+    opacity: .7;
+    transition: all .3s;
+}
+/* box hover effects */
+.box:hover{
+    opacity: 1;
+}
+
+.boxIcon {
+    font-size: 3rem;
 }
