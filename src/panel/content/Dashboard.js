@@ -4,11 +4,7 @@ const Dashboard = () => {
   return (
       <main>
         <div id="dashboard">
-          <div className="box">
-            <div className="boxIcon">+</div>
-            <div className="description">Add new chatbot</div>
-          </div>
-
+          <h1> Dashboard </h1>
         </div>
       </main>
   );

@@ -25,7 +25,7 @@
 nav{
     background-color: rgba(255, 255, 255, .5);
     background: var(--main-bg-color-half-transparent);
-    width: 13vw;
+    width: 20%;
     margin-right: 1px;
     min-width: 100px;
     border-top-left-radius: 3px;
@@ -108,9 +108,13 @@ nav{
 /* CONTENT */
 #content{
     background: var(--main-bg-color-semi-transparent);
-    width: 52vw;
+    width: 80%;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+}
+main {
+    height: 90%;
+    overflow-y: auto;
 }
 
 /* Topbar */
@@ -122,10 +126,6 @@ header{
     justify-content: flex-end;
 
     border-bottom: 1px solid #e7dcdb;
-}
-main {
-    height: 90%;
-    overflow-y: auto;
 }
 
 .topbarItem{
@@ -165,9 +165,18 @@ main {
     border-color: var(--main-text-color);
     opacity: 1;
 }
+/* Active Topbar Items effects */
+.topbarItem.active svg{
+    fill: currentColor;
+    color: var(--main-text-color);
+}
+.topbarItem.active img{
+    border-color: var(--main-text-color);
+    opacity: 1;
+}
 
-/* DASHBOARD */
-#dashboard{
+/* CHATBOTS */
+#chatbots{
     display: flex;
     flex-flow: row wrap;
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactSVG from "react-svg";
+import {NavLink} from "react-router-dom";
 
 //img
 import Profil from './img/profil.png'
@@ -7,21 +8,21 @@ import Profil from './img/profil.png'
 const Topbar = () => {
   return (
     <header>
-        <div className="topbarItem">
+        <NavLink to="/panel/search" className="topbarItem" activeClassName="active">
             <ReactSVG path="img/icons/search.svg" />
-        </div>
+        </NavLink>
 
-        <div className="topbarItem">
+        <NavLink to="/panel/notifications" className="topbarItem" activeClassName="active">
             <ReactSVG path="img/icons/notifications.svg" />
-        </div>
+        </NavLink>
 
-        <div className="topbarItem">
+        <NavLink to="/panel/messages" className="topbarItem" activeClassName="active">
             <ReactSVG path="img/icons/messages.svg" />
-        </div>
-        
-        <div className="topbarItem">
+        </NavLink>
+
+        <NavLink to="/panel/profil" className="topbarItem" activeClassName="active">
             <img src={Profil} alt="Profil" />
-        </div>
+        </NavLink>
     </header>
   );
 }

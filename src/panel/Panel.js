@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import ReactSVG from "react-svg";
+import ReactSVG from 'react-svg';
 import {
-  BrowserRouter as Router,
   Route,
-  Link,
-  Switch
+  Switch,
+  Link
 } from 'react-router-dom';
 
 //components
@@ -21,26 +20,26 @@ import './Panel.css';
 class Panel extends Component {
   render() {
     return (
-      <Router>
         <div id="container">
           <div id="panel">
+
             <nav>
-              <Link to='/'>
-                  <div className="logo">
-                      <ReactSVG path="img/icons/logo.svg" />
-                      <p>Chatbot</p>
-                  </div>
+              <Link to="/">
+                <div className="logo">
+                    <ReactSVG path="img/icons/logo.svg" />
+                    <p>Chatbot</p>
+                </div>
               </Link>
               <div id="navOptions">
-                  <NavItem name="Dashboard"/>
-                  <NavItem name="Chatbots"/>
-                  <NavItem name="Statistics"/>
-                  <NavItem name="Help"/>
-                  <NavItem name="Logout"/>
+                <NavItem name="Dashboard" />
+                <NavItem name="Chatbots" />
+                <NavItem name="Statistics" />
+                <NavItem name="Help" />
+                <NavItem name="Logout" />
               </div>
             </nav>
+
             <article id="content">
-            
               <Topbar />
 
               <Switch>
@@ -50,11 +49,9 @@ class Panel extends Component {
                 <Route path="/panel/help" component={Help} />
               </Switch>
                 
-
             </article>
           </div>
         </div>
-      </Router>
     );
   }
 }

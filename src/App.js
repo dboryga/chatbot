@@ -20,7 +20,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route path="/panel" component={Panel} />
-          <Route render={() => ( <Redirect to="/"/> )}/> {/*ERROR */}
+          <Route render={() => ( <Redirect to="/"/> )}/> {/*Incorrect route */}
         </Switch>
       </Router>
 
